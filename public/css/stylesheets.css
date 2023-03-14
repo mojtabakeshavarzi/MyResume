@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Mj';
+    src:url('../fonts/Mj_Faraz.woff2') format('woff2'),
+        url('../fonts/Mj_Faraz.woff') format('woff'),
+        url('../fonts/Mj_Faraz.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Mjo';
+    src:url('../fonts/Mj_FarazOutline.woff2') format('woff2'),
+        url('../fonts/Mj_FarazOutline.woff') format('woff'),
+        url('../fonts/Mj_FarazOutline.ttf') format('truetype');
+}
+

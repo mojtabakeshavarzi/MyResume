@@ -1,0 +1,11 @@
+
+@font-face {
+    font-family: 'Abecedary';
+    src: url('../fonts/Abecedary-Regular.woff2') format('woff2'),
+        url('../fonts/Abecedary-Regular.woff') format('woff'),
+        url('../fonts/Abecedary-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
