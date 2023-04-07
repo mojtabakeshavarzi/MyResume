@@ -1,3 +1,4 @@
+
 function Resume() {
     return ( 
         <section id="resume">
@@ -7,6 +8,7 @@ function Resume() {
         </h2>
         </div>
         </section>
+        
      );
 }
 

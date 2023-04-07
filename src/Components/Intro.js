@@ -1,6 +1,7 @@
 import { FaTwitter , FaFacebookF , FaInstagram , FaLinkedinIn } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io5";
-import Typical from "react-typical";
+import TypeWritterEffect from "react-typewriter-effect";
+
 
 function Intro() {
     return ( 
@@ -8,18 +9,26 @@ function Intro() {
         <section id="intro">
             <div className="container" >
                 <h1>Mojtaba Keshavarzi</h1>
-                <p>I'm {' '}
-                <Typical className="typed"
-                loop={Infinity}
-                wrapper="b"
-                steps={[
-                    'FrontEnd Developer',1000,
-                    'Designer',1000,
-                    'Freelancer',1000
-                ]}
-                 />
+                <div className="texttype">
+                <p>I'm 
+            <TypeWritterEffect className="typed" 
+                 textStyle={{
+                    color: '#0563bb',
+                    fontSize:'20px',
+                }}
+        startDelay={1000}
+        cursorColor="#3F3D56"
+        multiText={[
+          'FrontEnd Developer',
+          'Designer',
+          'Freelancer',
+        ]}
+        multiTextDelay={1500}
+        typeSpeed={50}
+        multiTextLoop
+                  />
                  </p>
-
+    </div>
                 <div className="social-links">
                     <a href="#/"> <FaTwitter /> </a>
                     <a href="#/"> <FaFacebookF /> </a>

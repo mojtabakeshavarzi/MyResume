@@ -12,7 +12,7 @@ function Skills() {
             </div>
             <div className="myskills">
             <label>CSS</label>
-            <progress value={.8}></progress>
+            <progress value={1}></progress>
             </div>
             <div className="myskills">
             <label>BOOTSTRAP</label>

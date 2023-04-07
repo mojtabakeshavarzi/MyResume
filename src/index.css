@@ -1,10 +1,16 @@
+html , body
+{
+    user-select: none;
+}
+*
+{
+    scroll-behavior: smooth;
+}
 
 body
 {
     font-family: "mj";
     margin: 0;
-    
-
 }
 
 a
@@ -13,11 +19,32 @@ a
     color: #45505b;
 }
 
+/*
+-----------
+Spinnenr
+-----------
+*/
+
+.spinner
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 200px;
+}
+
+/*
+----------
+-------- Navbar ------------
+----------
+*/
+
 .nav-menu {
     z-index: 999;
     position: fixed;
     top: 30%;
-    margin-left: 10px;
+    margin-left: 2%;
   }
   .nav-menu * {
     margin: 0;
@@ -33,16 +60,17 @@ a
     align-items: center;
     justify-content: center;
     color: #45505b;
-    padding: 10px 18px;
+    padding: 10px;
     margin-bottom: 8px;
     transition: 0.3s;
     font-size: 15px;
     border-radius: 50px;
     background: #f2f3f5;
-    height: 40px;
-    width: 100px;
+    height: 30px;
+    width: 30px;
     overflow: hidden;
     transition: 0.3s;
+
     
   }
   .nav-menu a:focus
@@ -81,87 +109,159 @@ a
     display: block;
   }
 
-  @media (max-width : 992px)
+@media (max-width : 992px)
+{
+  .nav-menu
   {
-    .nav-menu
-    {
-        display: none;
-    }
+    display: none;
   }
+}
+
+/*
+----- Mobile Nav ----------
+*/
+
+.navmob
+{
+  position: fixed;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  z-index: 990;
+  background: white;
+}
+
+.navmob li
+{
+  display: inline-flex;
+  margin-left: 20px;
+  text-align: start;
+}
+
+.navmob ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ic 
+{
+  display: block;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.ic , .navmob span
+{
+  color: black;
+}
+
+.res 
+{
+  margin-left: 15px;
+}
+
+.ic:hover , .navmob span:hover
+{
+  color: #0563bb !important;
+}
+
+@media (min-width : 992px)
+{
+  .navmob
+  {
+    display: none;
+  }
+}
+
+/*
+------------- Intro -----------------
+*/
 
 #intro
 {
-    position: relative ;
-    width: 100%;
-    height: 100vh;
-    background: url("img/hero-bg.jpg") top right no-repeat ;
-    background-size: cover;  
-    color: #45505b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative ;
+  width: 100%;
+  height: 100vh;
+  background: url("img/hero-bg.jpg") top right no-repeat ;
+  background-size: cover;  
+  color: #45505b;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
-#intro:before {
-    content: "";
-    background: rgba(255, 255, 255, 0.8);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-@media only screen and (max-width: 992px) {
-    #intro
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-  }
+#intro:before 
+{
+  content: "";
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
 .container
 {
-    position: relative;
+  position: relative;
+  align-items: center;
+  justify-content: start;
+  left: 15%;
 }
+
+.container h1 
+{
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container p 
+{
+  font-size: 23px;
+  text-align: left;
+}
+
 
 .social-links a
 {
-    font-size: 20px;
-    display: inline-flex;
-    margin: 15px;
-    margin-left: 0;
-   
-    
+  font-size: 20px;
+  display: inline-flex;
+  margin: 25px;
+  margin-left: 0;   
 }
-
 
 .social-links a:hover
 {
-    color: royalblue;
-}
-
-.typed
-{
-    color: #0563bb ;
-    
-    
-}
-
-h1
-{
-    font-size: 40px;
-    
-}
-
-p
-{
-    text-align: start;
-    font-size: 23px;
+  color: royalblue;
 }
 
 
+@media only screen and (max-width: 992px) {
+  #intro
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .container
+  {
+    position: relative;
+    align-items: center;
+    justify-content: start;
+    left: 0;
+
+  }
+}
+
+/*
+------------------
+Sections
+------------------
+*/
 
 .section-title h2 , h2 span{
     font-size: 32px;
@@ -207,11 +307,16 @@ p
 /* ----------------
     ABOUT
  ------------------ */
+
+
  
- .about
+.about
 {
-    margin: 0;
+
+    padding-top: 10px;
 }
+
+
 
 .aboutlist
 {
@@ -315,5 +420,174 @@ RESUME
 
 .resume
 {
-    margin-top: 50px;
+    padding-top: 50px;
+    width: 100%;
+    height: 100vh;
+}
+
+.portfolio
+{
+  padding-top: 50px;
+    width: 100%;
+    height: 100vh;
+}
+
+/* -----------------
+Contact
+---------------- */
+.contact
+{
+  padding-top: 50px;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.info
+{
+  position: relative;
+  width: 90%;
+  left: 10%;
+}
+
+.contact .info .icon
+{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0563bb;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+    background: #f2f3f5;
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+
+}
+@media only screen and (max-width: 992px) 
+{
+  .contact
+  {
+    display: none;
+  }
+}
+
+.icon:hover
+{
+  color: #ddd !important;
+  background-color: #0563bb !important;
+}
+
+.sec
+{
+  margin-top: 40px;
+}
+.contactspan-second
+{
+
+  padding: 0 0 0 60px ;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #728394;
+  text-align: start !important;
+  line-height: 1px; 
+
+}
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #45505b;
+}
+
+.inputs
+{
+  float: right;
+  position: absolute;
+  right: 3%;
+  width: 70%;
+  top: 0;
+}
+.hp , textarea , button
+{
+  border: 1px solid #a2aab3;
+  width: 350px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+textarea
+{
+  resize: vertical;
+}
+
+.sub , textarea
+{
+  width: 740px;
+}
+
+.btn 
+{
+  background: #0563bb;
+  cursor: pointer;
+  width: 200px;
+  border-radius: 12px;
+  color: white;
+}
+
+.footer
+{
+  background: whitesmoke;
+  padding-top: 40px;
+  
+}
+
+.footerthings h2 , p
+{
+  position: relative;
+  text-align: center;
+}
+
+.second a
+{
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: #0563bb;
+  color: white;
+}
+
+.footer p 
+{
+  font-size: 15px;
+}
+
+.social-link a
+{
+    font-size: 20px;
+    display: inline-flex;
+    margin: 15px;
+    margin-left: 0;
+}
+
+.upbtn
+{
+  width: 40px;
+  height: 40px;
+  background: #0563bb;
+  color: #fff;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 990;
+
 }

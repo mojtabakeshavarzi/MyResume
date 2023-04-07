@@ -5,9 +5,10 @@ import { BsCardList } from "react-icons/bs";
 import { IoMailOutline } from "react-icons/io5";
 
 function Navbar() {
+
     return ( 
 <>
-        <nav id="navbar" class="navbar nav-menu">
+    <nav id="navbar" class="navbar nav-menu">
       <ul>
         <li><a href="#intro" class="nav-link scrollto active"><GoHome className="icons" /> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><RxPerson className="icons" /> <span>About</span></a></li>
@@ -16,7 +17,8 @@ function Navbar() {
         <li><a href="#contact" class="nav-link scrollto"><IoMailOutline className="icons" /> <span>Contact</span></a></li>
       </ul>
     </nav>
-    </>
+
+</>
      );
 }
 

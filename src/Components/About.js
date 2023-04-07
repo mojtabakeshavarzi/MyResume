@@ -5,7 +5,7 @@ import { IoChevronForwardOutline } from "react-icons/io5";
 function About() {
   return (
     <section id="about">
-      <div className="section-title">
+      <div className="section-title about">
         <h2>
           <span>About</span>
         </h2>
@@ -45,7 +45,7 @@ function About() {
           </li>
           <li>
             <IoChevronForwardOutline className="abouticons" />
-            Degree :<span> Bachelor</span>
+            Degree :<span> Master</span>
           </li>
         </ul>
       </div>
