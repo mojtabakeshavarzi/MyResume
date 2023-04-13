@@ -1,16 +1,14 @@
 import Intro from "./Components/Intro";
 import Navbar from "./Components/Navbar";
-import About from "./Components/About";
 import Skills from "./Components/Skills";
-import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import Portfolio from "./Components/Portfolio";
 import { BrowserRouter } from "react-router-dom";
 import UpButton from "./Components/UpButton";
 import { useState , useEffect } from "react";
 import { CircleLoader } from "react-spinners";
 import NavbarMobile from "./Components/NavbarMobile";
+import About from "./Components/About";
 
 
 function App() {
@@ -25,7 +23,6 @@ function App() {
 
   },[])
 
-  
   return (
     <BrowserRouter>
     {
@@ -41,8 +38,6 @@ function App() {
       <Intro />
       <About />
       <Skills />
-      <Resume />
-      <Portfolio />
       <Contact />
       <Footer />
       <UpButton /> 

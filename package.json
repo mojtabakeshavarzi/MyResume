@@ -12,9 +12,11 @@
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-reveal": "^1.2.2",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
     "react-scrollspy": "^3.4.3",
+    "react-scrollspy-nav": "^1.3.0",
     "react-spinners": "^0.13.8",
     "react-typewriter-effect": "^1.1.0",
     "react-typical": "^0.1.3",
@@ -46,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-plugin-react-html-attrs": "^3.0.5"
   }
 }

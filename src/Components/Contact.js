@@ -1,4 +1,6 @@
-import { CiLocationOn } from "react-icons/ci";
+import RubberBand from 'react-reveal/RubberBand';
+import { Slide } from "react-reveal";
+import { GoLocation } from "react-icons/go";
 import { VscMail , VscDeviceMobile } from "react-icons/vsc";
 
 function Contact() {
@@ -6,12 +8,15 @@ function Contact() {
         <>
             <section id="contact">
                 <div className="section-title contact">
+                <RubberBand>
                     <h2>
                         <span>Contact</span>
                     </h2>
+                    </RubberBand>
                     <div className="info">
+                    <Slide left>
                     <div className="address sec">
-                        <CiLocationOn className="icon" />
+                        <GoLocation className="icon" />
                         <h4 className="contactspan">LOCATION :</h4>
                         <p className="contactspan-second">Tehran</p>
                         </div>
@@ -25,7 +30,9 @@ function Contact() {
                         <h4 className="contactspan">LOCATION :</h4>
                         <p className="contactspan-second">+98 92212506663</p>
                         </div>
+                        </Slide>
                         <div className="inputs">
+                        <Slide right>
                         <form>
                             <input className="hp" type="text" placeholder="Your Name"  />
                             <input className="hp" type="email" placeholder="Your Email"  />
@@ -35,9 +42,10 @@ function Contact() {
                             <textarea placeholder="Message" rows="7"/>  
                             <br/>
                             <center>
-                            <button className="btn" type="submit" >Send Message</button>
+                            <button className="btn"  > <a className="mailt" href="mailto:mojtabakeshavarzi@outlook.com"> Send Message</a></button>
                             </center>
                         </form>
+                        </Slide>
                         </div>
                         </div>
                     </div>

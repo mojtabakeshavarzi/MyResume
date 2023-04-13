@@ -1,28 +1,39 @@
-import { BrowserRouter } from "react-router-dom";
 import { IoChevronForwardOutline } from "react-icons/io5";
+import { Slide } from "react-reveal";
+import RubberBand from 'react-reveal/RubberBand';
 
+import mojtaba from "../img/00.jpg";
 
 function About() {
   return (
+    
     <section id="about">
       <div className="section-title about">
+      <RubberBand>
         <h2>
           <span>About</span>
         </h2>
+        </RubberBand>
+        <Slide top>
         <p>
           My name is Mojtaba Keshavarzi I'm 25 and i'm a Frontend web developer
           Intern.
         </p>
+        </Slide>
       </div>
       <div className="aboutlist">
+      <Slide left>
         <img
           className="image"
-          src="https://images.unsplash.com/photo-1459356979461-dae1b8dcb702?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ym95fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          src={mojtaba}
           alt=""
           width="400px"
           height="200px"
         />
+        </Slide>       
+        <Slide right>
         <ul className="aboutul">
+
           <li>
             <IoChevronForwardOutline className="abouticons" />
             Birthday : <span> 13 December 1998</span>
@@ -48,7 +59,9 @@ function About() {
             Degree :<span> Master</span>
           </li>
         </ul>
+        </Slide>
       </div>
+      
     </section>
   );
 }
