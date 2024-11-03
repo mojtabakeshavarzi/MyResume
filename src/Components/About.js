@@ -16,7 +16,7 @@ function About() {
         </RubberBand>
         <Slide top>
         <p>
-          My name is Mojtaba Keshavarzi I'm 25 and i'm a Frontend web developer
+          My name is Mojtaba Keshavarzi I'm 26 and i'm a Frontend web developer
           Intern.
         </p>
         </Slide>
