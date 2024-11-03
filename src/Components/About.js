@@ -40,7 +40,7 @@ function About() {
           </li>
           <li>
             <IoChevronForwardOutline className="abouticons" />
-            Website :<span> www.example.com</span>
+            Website :<span> www.exampleE.com</span>
           </li>
           <li>
             <IoChevronForwardOutline className="abouticons" />
